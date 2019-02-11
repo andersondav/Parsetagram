@@ -6,5 +6,6 @@ target 'Parsetagram' do
   use_frameworks!
 
   # Pods for Parsetagram
-
+  pod "Parse"
+  pod "AlamofireImage"
 end
