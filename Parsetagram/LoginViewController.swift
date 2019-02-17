@@ -12,11 +12,13 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        errorLabel.isHidden = true
     }
     
 
@@ -37,10 +39,13 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             if user != nil {
                 // Do stuff after successful login.
+                self.errorLabel.isHidden = true
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
                 // The login failed. Check error to see why.
                 print("error: \(error?.localizedDescription)")
+                self.errorLabel.text = "Username or Password is incorrect."
+                self.errorLabel.isHidden = false
             }
         }
     
@@ -55,11 +60,24 @@ class LoginViewController: UIViewController {
         
         user.signUpInBackground { (success, error) in
             if success {
+                self.errorLabel.isHidden = true
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
                 print("error: \(error?.localizedDescription)")
+                if ((error?.localizedDescription.contains("already"))!) {
+                    self.errorLabel.text = "Account already exists for this username."
+                    self.errorLabel.isHidden = false
+                } else {
+                    self.errorLabel.text = "There was an error. Please retry"
+                    self.errorLabel.isHidden = false
+                }
+                
             }
         }
         
+    }
+    
+    @IBAction func exitKeyboard(_ sender: Any) {
+        view.endEditing(true)
     }
 }

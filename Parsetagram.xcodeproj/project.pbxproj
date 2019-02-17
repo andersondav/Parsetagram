@@ -13,6 +13,8 @@
 		7176334922123A5D00EB30D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7176334722123A5D00EB30D9 /* LaunchScreen.storyboard */; };
 		71763353221241D500EB30D9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71763352221241D500EB30D9 /* LoginViewController.swift */; };
 		717633552212420A00EB30D9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717633542212420A00EB30D9 /* FeedViewController.swift */; };
+		717633572213691F00EB30D9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717633562213691F00EB30D9 /* CameraViewController.swift */; };
+		717633592213720300EB30D9 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717633582213720300EB30D9 /* PostCell.swift */; };
 		8E598CAA7FB9CD4BF1186FF9 /* Pods_Parsetagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA8205C0811763C79757D32 /* Pods_Parsetagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		7176334A22123A5D00EB30D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71763352221241D500EB30D9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = /Users/Anderson/Code/Swift/Parsetagram/Parsetagram/LoginViewController.swift; sourceTree = "<absolute>"; };
 		717633542212420A00EB30D9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = /Users/Anderson/Code/Swift/Parsetagram/Parsetagram/FeedViewController.swift; sourceTree = "<absolute>"; };
+		717633562213691F00EB30D9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		717633582213720300EB30D9 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				71763352221241D500EB30D9 /* LoginViewController.swift */,
 				7176333E22123A5900EB30D9 /* AppDelegate.swift */,
 				7176334222123A5900EB30D9 /* Main.storyboard */,
+				717633582213720300EB30D9 /* PostCell.swift */,
+				717633562213691F00EB30D9 /* CameraViewController.swift */,
 				7176334522123A5D00EB30D9 /* Assets.xcassets */,
 				7176334722123A5D00EB30D9 /* LaunchScreen.storyboard */,
 				7176334A22123A5D00EB30D9 /* Info.plist */,
@@ -218,8 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				71763353221241D500EB30D9 /* LoginViewController.swift in Sources */,
+				717633572213691F00EB30D9 /* CameraViewController.swift in Sources */,
 				717633552212420A00EB30D9 /* FeedViewController.swift in Sources */,
 				7176333F22123A5900EB30D9 /* AppDelegate.swift in Sources */,
+				717633592213720300EB30D9 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
