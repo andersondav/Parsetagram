@@ -24,6 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://mysterious-hollows-85315.herokuapp.com/parse"
             })
         )
+        
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            
+            let feedNavController = main.instantiateViewController(withIdentifier: "FeedNavController")
+            
+            window?.rootViewController = feedNavController
+        }
+        
         return true
     }
 
