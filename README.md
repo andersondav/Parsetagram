@@ -50,4 +50,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media.giphy.com/media/ZcLBkZraQvq6xp6Eir/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='2https://media.giphy.com/media/ZcLBkZraQvq6xp6Eir/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
